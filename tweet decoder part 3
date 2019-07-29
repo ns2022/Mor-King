@@ -1,0 +1,79 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string tweet;
+    int pos;
+    
+    cout << "Enter your tweet: ";
+    getline(cin, tweet);
+    
+    tweet.resize(160);
+    
+    pos = tweet.find("LOL");
+    
+    if (pos >= 0) {
+        tweet.replace(pos, 3, "LOL = laughing out loud");
+        
+    }
+    
+    pos = tweet.find("IRL");
+    
+    if (pos >= 0) {
+        tweet.replace(pos, 3,"IRL = in real life");
+    }
+    
+    pos = tweet.find("AFK");
+    
+    if (pos >= 0) {
+        tweet.replace(pos, 3,"AFK = away from keyboard");
+        
+    }
+    
+    pos = tweet.find("NVM");
+    
+    if (pos >= 0) {
+       tweet.replace(pos, 3,"NVM = never mind");
+        
+    }
+    
+    pos = tweet.find("BFF");
+    
+    if (pos >= 0) {
+        tweet.replace(pos, 3, "BFF = best friends forever");
+        
+    }
+    
+    pos = tweet.find("FTW");
+    
+    if (pos >= 0) {
+        tweet.replace(pos, 3, "FTW = for the win");
+        
+    }
+    
+    pos = tweet.find("IIRC");
+    
+    if (pos >= 0) {
+        tweet.replace(pos, 3,"IIRC = if I recall correctly");
+        
+    }
+    
+    pos = tweet.find("TTYL");
+    
+    if (pos >= 0) {
+       tweet.replace(pos, 3,"TTYL = talk to you later" );
+        
+    }
+    
+    pos = tweet.find("IMHO");
+    
+    if (pos >= 0) {
+        tweet.replace(pos, 3,"IMHO = in my humble opinion" );
+        
+    }
+    
+    return 0;
+    
+}
+
